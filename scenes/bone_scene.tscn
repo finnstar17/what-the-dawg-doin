@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://blqfqoaqa24ge"]
+
+[ext_resource type="Script" uid="uid://dlj8l7gun1f4n" path="res://scripts/bone_scene.gd" id="1_5au0y"]
+[ext_resource type="Texture2D" uid="uid://bgwgkm0hg4gnr" path="res://sprites/bone.png" id="1_yt0m1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5au0y"]
+
+[node name="Area2D" type="Area2D" unique_id=572929876]
+collision_layer = 0
+script = ExtResource("1_5au0y")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1409141904]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_yt0m1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1160503779]
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_5au0y")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

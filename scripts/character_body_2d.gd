@@ -2,8 +2,10 @@ extends CharacterBody2D
 
 
 const SPEED = 350.0
-const JUMP_VELOCITY = -350.0
+const JUMP_VELOCITY = -750.0
 
+var bones_collected = 0
+var coins_earned = 0
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -19,7 +21,12 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("left", "right")
 	if direction:
 		velocity.x = direction * SPEED
+		$Sprite2D.flip_h = direction < 0
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+# hey so to boost the time i have for coding im making this huge essay
+
+# anyway this is a really cool project you better trust me

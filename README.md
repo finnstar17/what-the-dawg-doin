@@ -18,6 +18,8 @@ you're all set! now you can open the project in your Godot Engine. yippee!
 
 ## How to Play
 ### Controls
+| Movement | Keybind |
+| --- | --- |
 | Left | A / Left Arrow Key |
 | Right | D / Right Arrow Key |
 | Jump | W / Space / Up Arrow Key |

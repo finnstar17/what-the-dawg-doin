@@ -24,3 +24,6 @@ you're all set! now you can open the project in your Godot Engine. yippee!
 
 ## In Regards to AI Usage
 no ai was used for this project. i tried my best to draw some simple assets for the game itself to give it its own... charm.
+
+## License
+This project is licensed under the MIT License - see [MIT License](what-the-dog-doin/LICENSE) for more details.
